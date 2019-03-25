@@ -1,3 +1,15 @@
+# Nunjucks 2.x: long term maintenance fork
+
+This fork of Nunjucks 2.x is maintained by the ApostropheCMS team
+as part of long term support for ApostropheCMS 2.x. There will be
+no new features or intentional changes in behavior. We recommend
+the latest version of the mainstream Nunjucks release for new
+projects, and plan to use that in future versions of ApostropheCMS
+that require a templating language.
+
+Our maintenance modifications, if any, are released under the same
+license as Nunjucks 2.x.
+ 
 # Nunjucks
 
 [Nunjucks](http://mozilla.github.io/nunjucks/) is a full featured
