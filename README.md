@@ -19,13 +19,13 @@ templating engine for javascript. It is heavily inspired by
 
 ## Installation
 
-`npm install nunjucks`
+`npm install @apostrophecms/nunjucks`
 
-(View the [CHANGELOG](https://github.com/mozilla/nunjucks/releases))
+(View the [CHANGELOG](https://github.com/mozilla/nunjucks/releases)) through 2.5.2. An additional changelog will be added here as neded for maintenance updates.
 
 ## Documentation
 
-See [here](http://mozilla.github.io/nunjucks/).
+See [here](http://mozilla.github.io/nunjucks/). NOTE: this is a legacy version (2.x) and not all 3.x documentation may be relevant.
 
 ## Browser Support
 
