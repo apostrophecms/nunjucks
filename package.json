@@ -1,8 +1,8 @@
 {
   "name": "nunjucks",
-  "description": "A powerful templating engine with inheritance, asynchronous control, and more (jinja2 inspired)",
-  "version": "2.5.2",
-  "author": "James Long <longster@gmail.com>",
+  "description": "2.x maintenance fork of Nunjucks templating language",
+  "version": "2.5.3",
+  "author": "P'unk Avenue LLC (maintenance only, original author James Long)",
   "dependencies": {
     "asap": "^2.0.3",
     "chokidar": "^2.0.0",

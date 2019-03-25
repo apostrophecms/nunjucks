@@ -1491,34 +1491,38 @@
             finish(done);
         });
 
-        it('should throw an error when including a file that calls an undefined macro even inside {% if %} tag', function(done) {
-            render(
-                '{% if true %}{% include "undefined-macro.njk" %}{% endif %}',
-                {},
-                { noThrow: true },
-                function(err, res) {
-                    expect(res).to.be(undefined);
-                    expect(err).to.match(/Unable to call `\w+`, which is undefined or falsey/);
-                }
-            );
+        // These tests fail in the unmodified 2.5.2 tag, the behavior of which
+        // we are maintaining in this fork. We are therefore leaving them out
+        // so we can cleanly detect new regressions.
 
-            finish(done);
-        });
+        // it('should throw an error when including a file that calls an undefined macro even inside {% if %} tag', function(done) {
+        //     render(
+        //         '{% if true %}{% include "undefined-macro.njk" %}{% endif %}',
+        //         {},
+        //         { noThrow: true },
+        //         function(err, res) {
+        //             expect(res).to.be(undefined);
+        //             expect(err).to.match(/Unable to call `\w+`, which is undefined or falsey/);
+        //         }
+        //     );
+        //
+        //     finish(done);
+        // });
 
-        it('should throw an error when including a file that imports macro that calls an undefined macro', function(done) {
-            render(
-                '{% include "import-macro-call-undefined-macro.njk" %}',
-                { 'list' : [1, 2, 3] },
-                { noThrow: true },
-                function(err, res) {
-                    expect(res).to.be(undefined);
-                    expect(err).to.match(/Unable to call `\w+`, which is undefined or falsey/);
-                }
-            );
-
-            finish(done);
-        });
-
+        // it('should throw an error when including a file that imports macro that calls an undefined macro', function(done) {
+        //     render(
+        //         '{% include "import-macro-call-undefined-macro.njk" %}',
+        //         { 'list' : [1, 2, 3] },
+        //         { noThrow: true },
+        //         function(err, res) {
+        //             expect(res).to.be(undefined);
+        //             expect(err).to.match(/Unable to call `\w+`, which is undefined or falsey/);
+        //         }
+        //     );
+        //
+        //     finish(done);
+        // });
+        //
 
         it('should control whitespaces correctly', function(done) {
             equal(
