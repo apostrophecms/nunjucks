@@ -1,5 +1,5 @@
 {
-  "name": "nunjucks",
+  "name": "@apostrophecms/nunjucks",
   "description": "2.x maintenance fork of Nunjucks templating language",
   "version": "2.5.3",
   "author": "P'unk Avenue LLC (maintenance only, original author James Long)",
