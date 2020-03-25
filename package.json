@@ -2,11 +2,10 @@
   "name": "@apostrophecms/nunjucks",
   "access": "public",
   "description": "2.x maintenance fork of Nunjucks templating language",
-  "version": "2.5.3",
+  "version": "2.5.4",
   "author": "P'unk Avenue LLC (maintenance only, original author James Long)",
   "dependencies": {
     "asap": "^2.0.3",
-    "chokidar": "^2.0.0",
     "yargs": "^3.32.0"
   },
   "browser": "./browser/nunjucks.js",
