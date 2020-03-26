@@ -3,7 +3,7 @@ Changelog
 
 * 2.5.4 (Mar 25 2020)
 
-* Removed chokidar to pass `npm audit`, and therefore `watch: true` as we must maintain Node 6 compatibility a little longer in Apostrophe 2.x. `watch: true` won't crash, it just won't do anything. ApostropheCMS was not using it. Note that nunjucks will still fail `npm audit` when installed for development of itself, but not when a package dependency because the error only concerns a testing framework not installed in production.
+* Removed chokidar to pass `npm audit`, and therefore `watch: true` as ApostropheCMS was not using it and it was causing npm audit problems. This package will still fail `npm audit` on its own but not as a dependency of a project because the issues are solely with devDependencies used for testing (where input is trusted anyway).
 
 2.5.3 (Mar 25 2019)
 
